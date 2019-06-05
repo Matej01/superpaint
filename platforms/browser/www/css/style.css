@@ -1,53 +1,47 @@
-#container { position: relative;
-    padding:5px 0px 0px 0px; 
-
+* { padding:0; margin:0; }
+h1 {
+  border-bottom:1px solid #000;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:40px;
+  font:20px/40px Arial;
+  background:#ddd;
+  margin:0;
+  padding:0 20px;
 }
-#stage { 
-    border: 1px solid #000;
+h1 span {
+  position:absolute;
+  right:10px;
 }
-
-html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-      }
-
-#colorToolbar {
-    border: 1px solid black; 
-    
-}
-
-#red {
-    background:red; 
-    width:50px; 
-    height:50px; 
-    
+ 
+h1 span a {
+  color:#000;
+  text-decoration: none;
 }
 
-#blue {
-    background:blue; 
-    width:50px; 
-    height:50px; 
-    
+canvas {
+  /* Breite und Höhe sind HTML-ATTRIBUTE!!! */
+  /*box-shadow:0 0 5px rgba(255,0,0,1) inset;*/
+  margin-top:40px;
 }
-
-#green {
-    background:green; 
-    width:50px; 
-    height:50px; 
-    
+footer {
+  border-top:1px solid #000;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:40px;
 }
-
-#yellow {
-    background:yellow; 
-    width:50px; 
-    height:50px; 
-    
+pen {
+  width:30px;
+  height:30px;
+  display:inline-block;
+  margin:5px;
+  border-radius:50%;
+  transition:all 0.5s;
 }
-
-#black {
-    background:black; 
-    width:50px; 
-    height:50px; 
-    
-}      
+pen.active {
+  transform:scale(0.5);
+}
