@@ -11,7 +11,7 @@ document.addEventListener( 'deviceready', function() {
             $('<div>').html(coords.coords.latitude + '/' + coords.coords.longitude ).appendTo( '<body>' );
         },function() {
             $('<div>').html('Error no position').appendTo( '<body>' );
-        });
+        },{timeout:10000});
 
     });
 
