@@ -6,7 +6,10 @@
 JS SW Developer Team 518
 </author>
 <content src="index.html" />
+
 <preferences name="android-minSdkVersion" value="26" />
+
+<plugin name="cordova-plugin-geolocation" src="npm" spec="~2.1.0" />
 
 <platform name="android">
  <icon density="ldpi" src="www/icon.png" />

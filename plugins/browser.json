@@ -11,9 +11,5 @@
             "PACKAGE_NAME": "at.wifiwien.superpaint"
         }
     },
-    "dependent_plugins": {},
-    "modules": [],
-    "plugin_metadata": {
-        "cordova-plugin-geolocation": "2.1.0"
-    }
+    "dependent_plugins": {}
 }
